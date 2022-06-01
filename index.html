@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Vacaciones Mecaformas 3D</title>
+  <link rel="STYLESHEET" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Vacaciones<br>
+      Mecaformas 3D</h1>
+  </header>
+  <main>
+    <span>
+      En <b>2022</b> hay 26 días y 2 horas de descanso <br>
+      22 días son vacaciones <br>
+      4 días y 2 horas son exceso de Jornada Anual
+    </span>
+    <br><br>
+    <article class="restaVacaciones">
+      <h3>
+        <u>Calculo Vacaciones</u>
+      </h3>
+      <mark>Vacaciones Iniciales</mark><br>
+      <form id="calculo">
+        Días: <input type="number" size="3" name="diasIniciales" value="0" min="0">
+        Horas: <input type="number" size="3" name="horasIniciales" value="0" min="0">
+        Minutos: <input type="number" size="3" name="minutosIniciales" value="0" min="0"><br>
+        <br>
+        <mark>Vacaciones a Restar</mark><br>
+        Días: <input type="number" size="3" name="diasRestar" value="0" min="0">
+        Horas: <input type="number" size="3" name="horasRestar" value="0" min="0">
+        Minutos: <input type="number" size="3" name="minutosRestar" value="0" min="0"><br>
+        <br>
+        <mark>Bajas en el año (No ERTE)</mark><br>
+        Dias:<input type="number" size="3" name="diasBaja" value="0" min="0"><span id="penalizacion"></span><br>
+        <br>
+        <input type="submit" class="calcular" name="restaVacaciones" value="Restar Vacaciones">
+      </form>
+      <br>
+      <div class="resultados"></div>
+      <div class="volver" hidden="true">
+        <input type="submit" class="otraVez" name="volverACalcular" value="Hacer otro Calculo">
+      </div>
+    </article>
+  </main>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
