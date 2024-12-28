@@ -3,7 +3,7 @@ const $otraVez = document.querySelector(".otraVez");
 const $resultados = document.querySelector(".resultados");
 const $calculo = document.getElementById("calculo");
 const $penalizacion = document.getElementById("penalizacion");
-let excesoJornada=7.25;
+let excesoJornada=6.25;
 
 let onOff=function(boleano){
   for (let i=0;i<8;i++){
